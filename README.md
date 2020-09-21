@@ -119,13 +119,15 @@ pt_key=****;pt_pin=***;&pt_key=****;pt_pin=***;
 ### A 只想无脑使用上游，不想自己修改。按如下配置后，每次上游更新，插件就会自动覆盖你的项目以达到同步上游的目的，缺点是你所有的更改都会被舍弃，完全跟上游一模一样。
 
 1. 参考[这里](http://note.youdao.com/noteshare?id=6cd72de428957d593c129749194b4352)，安装[pull插件](https://github.com/apps/pull)，并确认此项目已在pull插件的作用下（参考文中1-d）。
-2. ENJOY!上游更改三小时左右就会自动发起同步。
+2. 确保.github/pull.yml文件正常存在，yml内上游作者填写正确(此项目已填好，无需更改)。
+3. 将pull.yml里面的`mergeMethod: merge`修改为`mergeMethod: hardreset`保存。
+4. ENJOY!上游更改三小时左右就会自动发起同步。
 
 ### B 想要保留自己的改动，想要实现同步而不是覆盖的，如下操作。
 
 1. 参考[这里](http://note.youdao.com/noteshare?id=6cd72de428957d593c129749194b4352)，安装[pull插件](https://github.com/apps/pull)，并确认此项目已在pull插件的作用下（参考文中1-d）。
 2. 确保.github/pull.yml文件正常存在，yml内上游作者填写正确(此项目已填好，无需更改)。
-3. 将pull.yml里面的`hardreset`修改为`merge`保存。
+3. 确保pull.yml里面是`mergeMethod: merge`。
 4. ENJOY!上游更改三小时左右就会自动发起同步。
 
 ## B步骤需要注意的两点 除此以外代码都会自动同步 无需干涉
