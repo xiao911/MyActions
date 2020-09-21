@@ -3,10 +3,8 @@
 # MyActions
 
 ### 本项目已可以自动实现同步上游更改！
-### 本项目已可以自动实现同步上游更改！
-### 本项目已可以自动实现同步上游更改！
 
-## 关于如何自动同步代码请点[这里](https://github.com/goukey/MyActions#步骤) 必看！！！
+## 关于如何自动同步代码请点[这里](https://github.com/goukey/MyActions#自动同步fork后的代码) 必看！！！
 
 目前[@lxk0301](https://github.com/lxk0301) 的代码都支持无限账号了，各位可以直接使用那边的了呢
 
@@ -17,6 +15,8 @@
 > 支持TG-Bot通知
 >
 > 支持京东取关店铺和商品自定义参数
+>
+> 支持自动同步上游代码
 
 支持手动执行，具体在Actions中选中要执行的Workflows后再在右侧可以看到Run workflow，点击即可运行此workflow。
 
