@@ -1,10 +1,12 @@
-![sazs34’s github stats](https://github-readme-stats.vercel.app/api?username=sazs34&show_icons=true&theme=vue)
+![goukey’s github stats](https://github-readme-stats.vercel.app/api?username=goukey&show_icons=true&theme=vue)
 
 # MyActions
 
-### 本项目已可以自动实现同步上游更改！
+### 本项目已可以自动实现同步上游更改！！！
 
 ## 关于如何自动同步代码请点[这里](https://github.com/goukey/MyActions#自动同步fork后的代码) 必看！！！
+
+--------------------------------------------------------------------------------------------------------------
 
 目前[@lxk0301](https://github.com/lxk0301) 的代码都支持无限账号了，各位可以直接使用那边的了呢
 
@@ -114,16 +116,14 @@ pt_key=****;pt_pin=***;&pt_key=****;pt_pin=***;
 
 ### 自动同步Fork后的代码
 
-### 步骤
-
-### A 只想无脑使用上游，不想自己修改。按如下配置后，每次上游更新，插件就会自动覆盖你的项目以达到同步上游的目的，缺点是你所有的更改都会被舍弃，完全跟上游一模一样。
+### A.只想无脑使用上游，不想自己修改。按如下配置后，每次上游更新，插件就会自动覆盖你的项目以达到同步上游的目的，缺点是你所有的更改都会被舍弃，完全跟上游一模一样。
 
 1. 参考[这里](http://note.youdao.com/noteshare?id=6cd72de428957d593c129749194b4352)，安装[pull插件](https://github.com/apps/pull)，并确认此项目已在pull插件的作用下（参考文中1-d）。
 2. 确保.github/pull.yml文件正常存在，yml内上游作者填写正确(此项目已填好，无需更改)。
 3. 将pull.yml里面的`mergeMethod: merge`修改为`mergeMethod: hardreset`保存。
 4. ENJOY!上游更改三小时左右就会自动发起同步。
 
-### B 想要保留自己的改动，想要实现同步而不是覆盖的，如下操作。
+### B.想要保留自己的改动，想要实现同步而不是覆盖的，如下操作。
 
 1. 参考[这里](http://note.youdao.com/noteshare?id=6cd72de428957d593c129749194b4352)，安装[pull插件](https://github.com/apps/pull)，并确认此项目已在pull插件的作用下（参考文中1-d）。
 2. 确保.github/pull.yml文件正常存在，yml内上游作者填写正确(此项目已填好，无需更改)。
