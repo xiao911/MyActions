@@ -19,7 +19,6 @@
 >
 > 支持京东取关店铺和商品自定义参数
 >
-> 支持自动同步上游代码
 
 支持手动执行，具体在Actions中选中要执行的Workflows后再在右侧可以看到Run workflow，点击即可运行此workflow。
 
