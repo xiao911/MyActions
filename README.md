@@ -113,11 +113,13 @@ pt_pin=***;
 pt_key=****;pt_pin=***;&pt_key=****;pt_pin=***;
 ```
 
-### 手动同步Fork后的代码
+### 同步Fork后的代码
+
+#### 手动同步
 
 [手动同步 http://www.ibloger.net/article/3361.html](http://www.ibloger.net/article/3361.html)
 
-### 自动同步Fork后的代码
+#### 自动同步
 
 ##### 方案A - 强制远程分支覆盖自己的分支
 1. 参考[这里](http://note.youdao.com/noteshare?id=6cd72de428957d593c129749194b4352)，安装[pull插件](https://github.com/apps/pull)，并确认此项目已在pull插件的作用下（参考文中1-d）。
