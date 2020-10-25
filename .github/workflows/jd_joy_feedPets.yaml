@@ -9,6 +9,8 @@ on:
         - cron: "0 2,6,12,16,23 * * *"
     watch:
         types: [started]
+    repository_dispatch:
+        types: jd_joy_feedPets
 
 jobs:
     build:
@@ -28,10 +30,13 @@ jobs:
                   node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  JD_DEBUG: ${{ secrets.JD_DEBUG }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   BARK_SOUND: ${{ secrets.BARK_SOUND }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
-                  JDJoyFeedCount: ${{ secrets.JDJoyFeedCount }}
+                  DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+                  DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+                  JOY_FEED_COUNT: ${{ secrets.JOY_FEED_COUNT }}
                   SYNCURL: https://github.com/lxk0301/scripts/raw/master/jd_joy_feedPets.js

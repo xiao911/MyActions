@@ -9,6 +9,8 @@ on:
         - cron: "0 2-14/4 * * *"
     watch:
         types: [started]
+    repository_dispatch:
+        types: jd_plantBean
 
 jobs:
     build:
@@ -28,10 +30,13 @@ jobs:
                   node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  JD_DEBUG: ${{ secrets.JD_DEBUG }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   BARK_SOUND: ${{ secrets.BARK_SOUND }}
                   PLANT_BEAN_SHARECODES: ${{ secrets.PLANT_BEAN_SHARECODES }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+                  DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
                   SYNCURL: https://github.com/lxk0301/scripts/raw/master/jd_plantBean.js

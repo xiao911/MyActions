@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 京东取关店铺
+name: 全民抢红包
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 3-11/4 * * *"
+        - cron: "0 0,8,16 * * *"
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_unsubscribe
+        types: jd_redPacket
 
 jobs:
     build:
@@ -25,7 +25,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行 【京东取关店铺】"
+            - name: "运行 【京东全民抢红包】"
               run: |
                   node onlyOneExecute.js
               env:
@@ -38,5 +38,4 @@ jobs:
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
                   DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
                   DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-                  UNSUBSCRIBE: ${{ secrets.UNSUBSCRIBE }}
-                  SYNCURL: https://github.com/lxk0301/scripts/raw/master/jd_unsubscribe.js
+                  SYNCURL: https://raw.githubusercontent.com/lxk0301/scripts/master/jd_redPacket.js

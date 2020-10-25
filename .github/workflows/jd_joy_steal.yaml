@@ -9,6 +9,8 @@ on:
         - cron: "0 4,22 * * *"
     watch:
         types: [started]
+    repository_dispatch:
+        types: jd_joy_steal
 
 jobs:
     build:
@@ -33,4 +35,7 @@ jobs:
                   BARK_SOUND: ${{ secrets.BARK_SOUND }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+                  DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+                  JOY_HELP_FEED: ${{ secrets.JOY_HELP_FEED }}
                   SYNCURL: https://github.com/lxk0301/scripts/raw/master/jd_joy_steal.js
